@@ -44,11 +44,11 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   help
   userinput = " "
   until userinput == "exit"
-    puts "Please enter a command"
+    puts "Please enter a command:"
     userinput = gets.chomp
       if userinput == "help"
         help
